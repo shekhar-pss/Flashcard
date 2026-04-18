@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎓 Student Dashboard</h1>
+
+<!-- Create Button -->
+<div class="top-bar">
+  <button id="openModal">+ Create Card</button>
+</div>
+
+<!-- Cards -->
+<div id="students"></div>
+
+<!-- Modal Form -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+
+    <h2>Create Student Card</h2>
+
+    <form id="studentForm">
+      <label>Profile Image</label>
+      <input type="file" id="image">
+
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Enter full name" required>
+
+      <label>Course</label>
+      <input type="text" id="course" placeholder="Enter course name" required>
+
+      <button type="submit">Create Card</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

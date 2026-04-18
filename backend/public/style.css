@@ -1,0 +1,196 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #eef2f3, #dfe9f3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Top Button */
+.top-bar {
+  text-align: center;
+  margin: 20px;
+}
+
+.top-bar button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff5e62, #ff9966);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.top-bar button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Cards Container */
+#students {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  width: 230px;
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Name */
+.card h3 {
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Course */
+.card p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* ================= BUTTONS ================= */
+
+/* Base */
+.card button {
+  border: none;
+  padding: 8px 14px;
+  margin: 6px 4px;
+  border-radius: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* ✏️ Edit Button (Blue Gradient) */
+.edit-btn {
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
+  color: white;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #3a8dff, #00aaff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 150, 255, 0.4);
+}
+
+/* 🗑️ Delete Button (Red Gradient) */
+.delete-btn {
+  background: linear-gradient(135deg, #ff6a6a, #ff3d68);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #ff4b4b, #e6003d);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(255, 0, 80, 0.4);
+}
+
+/* Click effect */
+.card button:active {
+  transform: scale(0.95);
+}
+
+/* ================= MODAL ================= */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: white;
+  width: 360px;
+  margin: 8% auto;
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Submit Button */
+.modal-content button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #ff5e62, #ff9966);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.modal-content button:hover {
+  transform: scale(1.05);
+}
+
+/* Close Button */
+#closeModal {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #555;
+}
