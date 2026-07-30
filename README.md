@@ -1,4 +1,4 @@
-# 🎓 Student Management System (Full Stack Project)
+# 🎓 Student Management System (Full Stack Project).
 
 A full-stack **Student Management Web Application** built using **HTML, CSS, JavaScript, Node.js, Express.js, MongoDB Atlas, and Mongoose**. This project allows users to create, view, update, and delete student records along with image upload functionality.
 
